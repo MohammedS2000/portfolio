@@ -49,7 +49,7 @@ export default function Header() {
                             animate={{ y: 0, opacity: 1 }}
                             exit={{y:"-100%", opacity: 0}}
                             transition={{ duration: 0.4, ease: "easeInOut" }}
-                            className="md:hidden  flex w-full flex-col absolute pt-28 top-0 right-0 space-y-4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg text-xl">
+                            className="md:hidden z-40  flex w-full flex-col absolute pt-28 top-0 right-0 space-y-4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg text-xl">
                         <li>
                             <a href="/Home" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
                                 Home

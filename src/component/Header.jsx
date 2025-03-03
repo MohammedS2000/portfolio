@@ -3,6 +3,7 @@ import { useContext , useState } from "react";
 import { DarkModeContext } from "./DarkToggle";
 import { HiMenu, HiX } from "react-icons/hi";
 import {motion, AnimatePresence} from "framer-motion";
+import {Link} from "react-router-dom";
 
 export default function Header() {
 
@@ -12,7 +13,7 @@ export default function Header() {
     return (
         <div className={darkMode ? "dark bg-gray-900" : ""}>
             <div className="px-10 container  mx-auto font-mono">
-                <nav className="flex  justify-between py-10 mb-10">
+                <nav className="flex  justify-between py-10">
                     
                     <h1 className="text-xl font-bold p-2 z-50 text-violet-800 duration-500 rounded-full px-4 hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3">
                         M
@@ -21,19 +22,19 @@ export default function Header() {
                   
                     <ul className="hidden md:flex items-center text-xl">
                         <li>
-                            <a href="/Home" className="p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
+                            <Link to="/Home" className="p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/Project" className="p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
+                            <Link to="/Project" className="p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
                                 Project
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/Contact" className="p-3 duration-500 text-violet-800 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
+                            <Link to="/Contact" className="p-3 duration-500 text-violet-800 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2 ml-3 ">
                                 Contact Me
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="md:hidden flex items-center">
@@ -51,19 +52,19 @@ export default function Header() {
                             transition={{ duration: 0.4, ease: "easeInOut" }}
                             className="md:hidden z-40  flex w-full flex-col absolute pt-28 top-0 right-0 space-y-4 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg text-xl">
                         <li>
-                            <a href="/Home" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
+                            <Link to="/Home" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/Project" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
+                            <Link to="/Project" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
                                 Project
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/Contact" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
+                            <Link to="/Contact" onClick={() => setIsOpen(false)} className="block p-3 text-violet-800 duration-500 rounded-full hover:text-white hover:bg-violet-800 border-violet-800 border-2">
                                 Contact Me
-                            </a>
+                            </Link>
                         </li>
                     </motion.ul>
                 )}

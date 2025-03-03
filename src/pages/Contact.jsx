@@ -11,12 +11,11 @@ export default function Contact(){
       <div className="dark:bg-gray-900"> 
       <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 cursor-pointer rounded-full duration-500 border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>
   
-      <Header/>
       <div className={darkMode ? "dark bg-gray-900" : ""}>
-        <main className="px-10 container mx-auto font-mono dark:bg-gray-900">
+        <main className="px-10 container pt-16 mx-auto font-mono dark:bg-gray-900">
           <section className="min-h-screen">
-            <h1 className="text-center text-violet-800 text-5xl font-bold mb-3">Contact Me</h1>
-            <div className="flex flex-col lg:flex-row sm:text-center sm:items-center lg:items-start lg:text-left justify-between gap-8 py-16">  
+            <h1 className="text-center text-violet-800 text-5xl font-bold mb-10">Contact Me</h1>
+            <div className="flex flex-col lg:flex-row sm:text-center sm:items-center lg:items-start lg:text-left justify-between gap-8">  
             <div className="xl:w-2/4 mb-16">
                 <h1 className="text-5xl font-semibold py-2 text-black dark:text-white">Send me a message or contact me at the following <br/><span className="text-violet-800">E-mail:</span></h1>
                 <h3 className="text-2xl py-2 dark:text-white hover:animate-pulse hover:scale-105 duration-500">mohammedsamiawad2000@gmail.com</h3>

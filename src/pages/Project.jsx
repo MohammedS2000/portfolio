@@ -32,9 +32,9 @@ export default function Project(){
     <div className="dark:bg-gray-900"> 
           <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 z-50 duration-500 cursor-pointer rounded-full border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>
       
-          <Header/>
+
           <div className={darkMode ? "dark bg-gray-900" : ""}>
-            <main className="px-10 container mx-auto font-mono dark:bg-gray-900">
+            <main className="px-10 container pt-16 mx-auto font-mono dark:bg-gray-900">
               <section className="min-h-screen">
                 <div className="mb-3 text-center">
                 	<h1 className="text-center text-violet-800 text-5xl font-bold mb-5">My Projects</h1>

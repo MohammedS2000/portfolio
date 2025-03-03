@@ -13,7 +13,7 @@ export default function Home() {
         <div className="dark:bg-gray-900">
 
             <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 cursor-pointer duration-500 rounded-full border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>                  
-            <Header />
+
 
             <div className={darkMode ? "dark bg-gray-900" : ""}>
                 <main className="px-10 container mx-auto font-mono dark:bg-gray-900">

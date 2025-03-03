@@ -3,7 +3,7 @@ import { useContext , useState } from "react";
 import { DarkModeContext } from "./DarkToggle";
 import { HiMenu, HiX } from "react-icons/hi";
 import {motion, AnimatePresence} from "framer-motion";
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
 export default function Header() {
 
@@ -67,8 +67,12 @@ export default function Header() {
                             </Link>
                         </li>
                     </motion.ul>
+
+                    
                 )}
                 </AnimatePresence>
+
+                <Outlet/>
             </div>
         </div>
     );

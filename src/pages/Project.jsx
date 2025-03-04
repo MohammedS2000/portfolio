@@ -1,4 +1,3 @@
-import Header from "../component/Header";
 import { useContext } from "react";
 import { DarkModeContext } from "../component/DarkToggle";
 import { BsFillMoonStarsFill } from "react-icons/bs";

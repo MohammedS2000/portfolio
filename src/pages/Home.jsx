@@ -3,7 +3,6 @@ import { DarkModeContext } from "../component/DarkToggle";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiOutlineX, AiFillLinkedin } from "react-icons/ai";
 import wave from "../images/wave.png";
-import Header from "../component/Header";
 import {Typewriter} from 'react-simple-typewriter';
 
 export default function Home() {

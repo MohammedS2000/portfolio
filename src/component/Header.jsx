@@ -4,14 +4,17 @@ import { DarkModeContext } from "./DarkToggle";
 import { HiMenu, HiX } from "react-icons/hi";
 import {motion, AnimatePresence} from "framer-motion";
 import {Link, Outlet} from "react-router-dom";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export default function Header() {
 
-    const { darkMode } = useContext(DarkModeContext);
+    const { darkMode, setDarkMode } = useContext(DarkModeContext);
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className={darkMode ? "dark bg-gray-900" : ""}>
+                        <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 cursor-pointer duration-500 rounded-full border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>                  
+            
             <div className="px-10 container  mx-auto font-mono">
                 <nav className="flex  justify-between py-10">
                     

@@ -48,7 +48,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="relative mx-auto bg-gradient-to-b  from-violet-800 rounded-full overflow-hidden h-80 w-80 items-center 2xl:w-96 2xl:h-96 sm:my-10 2xl:my-0">
+                            <div className="relative mx-auto bg-gradient-to-b  from-violet-800 rounded-full overflow-hidden md:w-80 md:h-80  items-center 2xl:w-96 2xl:h-96 sm:my-10 2xl:my-0">
                                 <img src={wave} alt="waving-man" />
                             </div>
                         </div>

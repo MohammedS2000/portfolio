@@ -1,16 +1,11 @@
-import { useContext } from "react";
-import { DarkModeContext } from "../component/DarkToggle";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+
 
 
 export default function Contact(){
-  const { darkMode, setDarkMode } = useContext(DarkModeContext);
   
     return (
-      <div className="dark:bg-gray-900"> 
-      <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 cursor-pointer rounded-full duration-500 border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>
+      <div > 
   
-      <div className={darkMode ? "dark bg-gray-900" : ""}>
         <main className="px-10 container pt-16 mx-auto font-mono dark:bg-gray-900">
           <section className="min-h-screen">
             <h1 className="text-center text-violet-800 text-5xl font-bold mb-10">Contact Me</h1>
@@ -32,6 +27,6 @@ export default function Contact(){
           </section>  
         </main>
       </div>
-      </div>
+      
     )
 }

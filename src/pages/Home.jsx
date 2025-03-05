@@ -1,20 +1,15 @@
-import { useContext } from "react";
-import { DarkModeContext } from "../component/DarkToggle";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillGithub, AiOutlineX, AiFillLinkedin } from "react-icons/ai";
 import wave from "../images/wave.png";
 import {Typewriter} from 'react-simple-typewriter';
 
 export default function Home() {
-    const { darkMode, setDarkMode } = useContext(DarkModeContext);
 
     return (
-        <div className="dark:bg-gray-900">
-
-            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="text-violet-800 cursor-pointer duration-500 rounded-full border-violet-800 border-2 w-12 h-12 px-3 dark:hover:text-white hover:text-white hover:bg-violet-800 fixed bottom-5 right-5 dark:text-violet-800"/>                  
+        <div>
 
 
-            <div className={darkMode ? "dark bg-gray-900" : ""}>
+
+           
                 <main className="px-10 container mx-auto font-mono dark:bg-gray-900">
                     <section className="min-h-screen">
                         <div className="2xl:flex  justify-between gap-44 py-16">
@@ -60,6 +55,6 @@ export default function Home() {
                     </section>
                 </main>
             </div>
-        </div>
+        
     );
 }

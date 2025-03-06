@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProjectGrid = ({projects}) => {
-    return(
-        <div className="grid grid-cols-1 lg:grid-cols-2 pt-8 pb-32 gap-16">
-            {projects.map((project, index) => (
+const ProjectGrid = ({ projects }) => {
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 pt-8 pb-32 gap-16">
+      {projects.map((project, index) => (
         <div
           key={index}
           className="group hover:scale-110 transform-gpu duration-500 shadow-lg border-2 rounded-xl border-violet-800"
@@ -17,7 +17,7 @@ const ProjectGrid = ({projects}) => {
         </div>
       ))}
     </div>
-    );
+  );
 };
 
 export default ProjectGrid;

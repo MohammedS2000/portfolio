@@ -1,5 +1,5 @@
-import xLayout from "../images/xLayout.png";
-import youtubeLayout from "../images/youtubeLayout.png"
+import TripTailor from "../images/TripTailor.png";
+import Ecommerce from "../images/Ecommerce.png"
 import ToDoList from "../images/ToDoList.png"
 import ProjectGrid from "../component/ProjectGrid";
 
@@ -8,19 +8,19 @@ export default function Project() {
 
   const projects = [
     {
-      image: xLayout,
-      name: "Project Name 1",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      image: TripTailor,
+      name: "Trip Tailor",
+      description: "Trip planner app made with react native using gemini AI.",
     },
     {
-      image: youtubeLayout,
-      name: "Project Name 2",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      image: Ecommerce,
+      name: "Ecommerce",
+      description: "Eccomerce web page made with reactjs",
     },
     {
       image: ToDoList,
-      name: "Project Name 3",
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      name: "ToDo List",
+      description: "A simple ToDo list made with reactjs as a small task",
     },
   ]
 
